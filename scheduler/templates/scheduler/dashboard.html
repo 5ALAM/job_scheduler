@@ -1,0 +1,28 @@
+<h1>Dashboard</h1>
+
+<h2>Pending Jobs</h2>
+<ul>
+    {% for job in pending_jobs %}
+        <li>{{ job.job_name }} - Status: {{ job.status }}</li>
+    {% empty %}
+        <li>No pending jobs.</li>
+    {% endfor %}
+</ul>
+
+<h2>Running Jobs</h2>
+<ul>
+    {% for job in running_jobs %}
+        <li>{{ job.job_name }} - Status: {{ job.status }}</li>
+    {% empty %}
+        <li>No running jobs.</li>
+    {% endfor %}
+</ul>
+
+<h2>Completed Jobs</h2>
+<ul>
+    {% for job in completed_jobs %}
+        <li>{{ job.job_name }} - Status: {{ job.status }}</li>
+    {% empty %}
+        <li>No completed jobs.</li>
+    {% endfor %}
+</ul>
