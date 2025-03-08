@@ -2,7 +2,7 @@
 
 ## Installation
 1. Clone the repository:
-git clone https://github.com/5ALAM/job-scheduler.git
+git clone https://github.com/5ALAM/job_scheduler.git
 
 
 2. Navigate into the project:
